@@ -1,0 +1,11 @@
+services:
+  meindstadt-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - variables.env
+    volumes:
+      - ./tmp:/var/task/tmp
+    ports:
+      - "${DOCKER_DRINKS_PORT:-9000}:8080"
