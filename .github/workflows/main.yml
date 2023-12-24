@@ -35,5 +35,5 @@ jobs:
         IMAGE_TAG: latest
       run: |
         docker-compose up -d --build
-        docker tag meinstadt-meindstadt-app:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG 
+        docker tag meinstadt-meindstadt-app_1:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG 
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
