@@ -5,6 +5,4 @@ venv/
 .idea/
 .vscode/
 .env
-*.db
-drinks.db
 ER
