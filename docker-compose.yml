@@ -1,8 +1,9 @@
 services:
-  meindstadt-app:
+  meindstadt:
     build:
       context: .
       dockerfile: Dockerfile
+    image: meindstadt_prod:local
     env_file:
       - variables.env
     volumes:
