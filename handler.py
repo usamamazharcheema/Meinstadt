@@ -30,9 +30,9 @@ def etl_process(url: str, delay=5):
 
 def main(reset_db, url):
     logging.basicConfig(level="INFO")
-    if reset_db == "True":
-        schema_manager.teardown_db_schema()
-        schema_manager.setup_db_schema()  # setting up database schema
+    # if reset_db == "True":
+    #     schema_manager.teardown_db_schema()
+    #     schema_manager.setup_db_schema()  # setting up database schema
 
     etl_process(url)  # Performing extraction, measure conversion and data loading
 
