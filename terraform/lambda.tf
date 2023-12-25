@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "greetings_function" {
   function_name = "meinstadt_lambda"
-  architectures = ["arm64"]
+  architectures = ["x86_64"]
   role          = aws_iam_role.iam_for_lambda.arn
   package_type  = "Image"
   timeout       = 600
