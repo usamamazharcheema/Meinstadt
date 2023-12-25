@@ -5,4 +5,8 @@ venv/
 .idea/
 .vscode/
 .env
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
 ER
