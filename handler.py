@@ -45,6 +45,6 @@ def handler(event, context):
     reset_db = os.environ.get("RESET_DB")
     url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
     queries_result = main(reset_db, url)
-    response = {"statusCode": 200, "body": queries_result}
+    response = {"statusCode": 200, "body": "queries_result"}
 
     return response
